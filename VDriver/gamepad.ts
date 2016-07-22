@@ -43,7 +43,7 @@ function updateStatus() {
       }
 
       var pct = Math.round(val * 100) + "%";
-      b.style.backgroundSize = pct + " " + pct;
+      //b.style.backgroundSize = pct + " " + pct;
 
       if (pressed) {
         b.className = "button pressed";
