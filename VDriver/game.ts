@@ -41,25 +41,6 @@ var vrcam = new THREE.StereoCamera();
 vrcam.aspect = 0.5;
 var vr = true;
 
-class Car extends THREE.Object3D{
-    vel=new THREE.Vector2(0,0);
-    acc=0.0;
-    dir=0.0;
-    constructor(){
-        super();
-        this.position.x=this.position.y=this.position.z=0;
-    }
-    opAcc(v:number){
-
-    }
-    opBrake(v:number){
-
-    }
-    opSteel(deg:number){
-        
-    }
-}
-
 function render(cam: THREE.PerspectiveCamera) {
     scene.updateMatrixWorld(false);
     if (cam.parent === null) cam.updateMatrixWorld(false);
